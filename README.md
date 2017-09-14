@@ -38,8 +38,8 @@ Once you clone the project (or download the zip and uncompress it) you will see 
 The src folder contains the packages with .java files for ease of maintenance and modularity.
 
 In order to run the indexer, create 2 folders in the main directory (alongside src).
-* files
-* index
+* files [here the splitted sorted files and splitted id-title map files are stored]
+* index [here primary, secondary and tertiary index files, as well as primary and secondary id-title map will be stored]
 
 I provided a sample file with 100 Wikipedia articles that illustrates the concept of indexing and searching.
 
