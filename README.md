@@ -11,7 +11,8 @@ The given problem was to design and develop a scalable and efficient search engi
 * Results obtained in less than a sec (even for long queries)
 * Supports field queries (ex: title)
 * Index size should be less than 1/4 of the data size.
-* You have to build your own indexing mechanism, i.e. you cannot use Nutch or Lucene to index the Wikipedia data. *Platform:
+* You have to build your own indexing mechanism, i.e. you cannot use Nutch or Lucene to index the Wikipedia data. 
+* Platform:
   * OS: Preferably Linux
   * Languages: Java/C++/Python
 
@@ -43,17 +44,17 @@ In order to run the indexer, create 2 folders in the main directory (alongside s
 I provided a sample file with 100 Wikipedia articles that illustrates the concept of indexing and searching.
 
 On Linux open the terminal and run:
-
-> javac Main.java
-> java Main
-> javac Query.java
-> java Query
+    
+    javac Main.java
+    java Main
+    javac Query.java
+    java Query
 
 The indexer should start running, it might take a while, and you will get a completion message with time statistics displayed in counts of milliseconds taken.
 
 For testing the searching, you can try 2 types of queries:
 
-    Regular Queries - just plain text
-    Fielded Queries - words with specific criteria, like t:lord b:rings, where t: means search in title, b: means search in body. You can use 4 types, namely t: for title, b: for body, c: for category, i: for infobox, r: for reference, e: for external links.
+* Regular Queries - just plain text
+* Fielded Queries - words with specific criteria, like t:lord b:rings, where t: means search in title, b: means search in body. You can use 4 types, namely t: for title, b: for body, c: for category, i: for infobox, r: for reference, e: for external links.
 
 You should see the top 10 results available (maximum) per each query.
