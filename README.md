@@ -1,5 +1,5 @@
 # Search-Engine-Wiki-
-Writen for the Information Retrieval and Extraction Course Spring 2015 at IIIT-H.
+Writen for the Information Retrieval and Extraction Course Spring 2016 at IIIT-H.
 
 ## Summary
 The Wiki Parser uses java's SAX parser to parse the tags of the Wiki Markup. Main.java is to be executed for parsing and indexing. The Tokenizer and PorterStemmer were included in the project. The title, text, infobox, categories, references and external links are case-folded, tokenized, stemmed and indexed. The search query can be regular words, or can be fielded query like t:lord b:rings . Query.py is the main file to be executed for searching  commands.
@@ -58,3 +58,6 @@ For testing the searching, you can try 2 types of queries:
 * Fielded Queries - words with specific criteria, like t:lord b:rings, where t: means search in title, b: means search in body. You can use 4 types, namely t: for title, b: for body, c: for category, i: for infobox, r: for reference, e: for external links.
 
 You should see the top 10 results available (maximum) per each query.
+
+## Future works
+Use Okapi BM25 for ranking and champion list generation
