@@ -16,7 +16,7 @@ The given problem was to design and develop a scalable and efficient search engi
   * OS: Preferably Linux
   * Languages: Java/C++/Python
 
-## My Approach
+## Approach
 
 By using the SAX parser (Simple API for XML) traverse the file line by line and triggers specific functions whenever there is an opening tag, content, and closing tag. This allows us to parse through the file without having to load the entire structure into memory.
 
@@ -27,8 +27,8 @@ Using this approach, we extract each Wikipedia article as an object, and then pa
 Now this map can not be stored in memory at once, so dump the map to temporary files for every 5,000 Wikipedia articles, and then merge them together at the end. Then we sort the final file and output compressed part files for us to access in an easy way, and reduce the index size.
 
 The searching takes a query and breaks it down the same way (tokenization, case folding, stemming) and tries to extract the frequency from the index. Then we calculate the TFIDF (Term Frequency - Inverse Document Frequency) for each word and document and generate a ranked list of Wikipedia article titles as the end result.
-My Implementation
 
+## Implementation
 I wrote the following java program that can parse a Wikipedia dump XML file and index it in index files. These can then be used to search for articles through a simple searching algorithm.
 
 This implementation is very slow and not optimized, it is far from the ideal, but it gets the job done.
